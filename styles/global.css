@@ -9,7 +9,7 @@
 :root{
   /* Font variables */
   --fc-primary: #6B6572;
-  --fx-secondary: #F0EDF2;
+  --fc-secondary: #F0EDF2;
   --ff: "Inter", sans-serif;
   --text-primary: 600 0.875rem/140% var(--ff) 
   --text-md: 500 0.875rem/140% var(--ff)
@@ -17,5 +17,9 @@
   
   /* Text Color */
   color: var(--fc-primary);
-  
+
+}
+
+.container{
+  padding-inline: 1.5rem;
 }
