@@ -1,0 +1,21 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add variables */
+:root{
+  /* Font variables */
+  --fc-primary: #6B6572;
+  --fx-secondary: #F0EDF2;
+  --ff: "Inter", sans-serif;
+  --text-primary: 600 0.875rem/140% var(--ff) 
+  --text-md: 500 0.875rem/140% var(--ff)
+  --text-sm: 500 0.75rem/140% var(--ff)
+  
+  /* Text Color */
+  color: var(--fc-primary);
+  
+}
