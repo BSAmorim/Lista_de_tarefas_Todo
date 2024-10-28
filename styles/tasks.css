@@ -1,0 +1,81 @@
+#tasks{
+  margin-top: 3rem;
+  
+
+  /* Tarefas criadas e concluídas */
+
+  & .info{
+    display: flex;
+    justify-content: center;
+    gap: 4.8rem;
+
+    & h2{
+      margin-top: 0.2rem;
+    }
+
+    & .created-tasks p{
+      display: flex;
+      background-color: #DDD2EF;
+      color: var(--purple-dark);
+      padding: 0.25rem 0.5rem;
+      border-radius: 62.4375rem;
+    }
+
+    & .completed-tasks p{
+      background-color: var(--green-light);
+      color: var(--green-dark);
+      padding: 0.25rem 0.5rem;
+      border-radius: 62.4375rem;
+    }
+  }
+
+  & .created-tasks, .completed-tasks {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  /* Separador */
+
+  .separator{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto;
+    border: 2px solid var(--base-gray);
+  }
+
+  /* Caixa das listas bão cadastradas. */
+
+  .box-lists{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    & .list{
+      margin-top: 3rem;
+
+      & img{
+        margin-bottom: 1rem;
+      }
+
+      & div p{
+        font: var(--text-md);
+      }
+    }
+    
+  
+    
+
+  }
+
+
+}
+
+@media (width >= 60em){
+  #tasks{
+    margin-top: 5rem;
+
+    & .info{
+      gap: 37.5rem;
+    }
+  }
+}

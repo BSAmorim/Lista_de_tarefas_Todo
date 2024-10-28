@@ -1,5 +1,5 @@
 header{
-  background-color: #E0DCE4;
+  background-color: var(--base-gray);
   height: 7.375rem;
   text-align: center;
   
@@ -20,12 +20,12 @@ header{
       padding: 0.9375rem 1.125rem;
       margin-top: 1.2rem;
       border-radius: 0.5rem;
-      border: 2px solid #E0DCE4;
+      border: 2px solid var(--base-gray);
     }
 
     & input:focus{
-      outline: 0px solid #9359F3;
-      border-color: #9359F3;
+      outline: 0px solid var(--purple-base);
+      border-color: var(--purple-base);
     }
 
     & button{
@@ -36,24 +36,21 @@ header{
       height: 3.25rem;
       margin-top: 1.2rem;
       cursor: pointer;
-      background-color: #6F3CC3;
+      background-color: var(--purple-dark);
 
       & img{
         margin-top: 0.25rem;
         width: 50%;
       }
       
-      & .hidden{
-        display: none;
-      }
     }
 
     & button:focus{
-      outline: 2px solid #9359F3;
+      outline: 2px solid var(--purple-base);
     }
 
     & button:hover {
-     background-color: #9359F3;
+     background-color: var(--purple-base);
     }
   }
 }
