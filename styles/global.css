@@ -31,9 +31,17 @@
 }
 
 .container{
-  padding-inline: 1.5rem;
+  margin-inline: 3.1rem;
 }
 
 .hidden{
   display: none;
+}
+
+.flex{
+  display: flex;
+}
+
+img{
+  width: 100%;
 }

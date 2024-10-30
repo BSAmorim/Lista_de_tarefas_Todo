@@ -14,7 +14,6 @@
     }
 
     & .created-tasks p{
-      display: flex;
       background-color: #DDD2EF;
       color: var(--purple-dark);
       padding: 0.25rem 0.5rem;
@@ -34,48 +33,97 @@
     gap: 0.5rem;
   }
 
-  /* Separador */
-
-  .separator{
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem auto;
-    border: 2px solid var(--base-gray);
-  }
-
-  /* Caixa das listas bão cadastradas. */
-
-  .box-lists{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
-    & .list{
-      margin-top: 3rem;
-
-      & img{
-        margin-bottom: 1rem;
-      }
-
-      & div p{
-        font: var(--text-md);
-      }
-    }
-    
   
-    
+}
 
+/* Separador */
+
+.separator{
+  margin: 1.5rem auto;
+  border: 0.5px solid var(--base-gray);
+}
+
+/* Caixa das listas bão cadastradas. */
+
+.box-lists{
+  text-align: center;
+
+  & .list{
+    margin-top: 4rem;
+
+    & img{
+      margin-bottom: 1rem;
+    }
+
+    & div p{
+      font: var(--text-md);
+    }
   }
-
 
 }
 
+.task-content{
+  display: flex;
+  justify-content: center;
+  
+
+  & div{
+    /* display: flex; */
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 22.3rem;
+    background-color: var(--base-gray);
+    border: 1px solid #D1CBD7;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    
+    position: relative;
+    
+    & [type="checkbox"]{
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+    
+    & .checkbox-image{
+      border: none;
+      flex: 0 0 1.5rem;
+      height: 1.5rem;
+      background-image: url(../assets/img/checkbox.svg);
+    }
+
+    &:hover, &:focus-within{
+      .checkbox-image{
+        background-image: url(../assets/img/checkbox-hover.svg);
+      }
+    }
+
+    &:has(:checked) .checkbox-image{
+      background-image: url(../assets/img/checked.svg);
+    }
+
+    & img{
+      width: 1.5rem;
+    }
+
+    & img:hover{
+      
+    }
+  }
+}
+
 @media (width >= 60em){
+
   #tasks{
     margin-top: 5rem;
 
     & .info{
-      gap: 37.5rem;
+      gap: 35.5rem;
+
+    }
+
+    & .task-content div{
+      width: 46rem;
     }
   }
 }
