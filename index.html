@@ -18,7 +18,7 @@
     <img src="assets/Logo.svg" alt="logo">
 
     <form class="container">
-      <input name="add-task" id="add-task" type="text" placeholder="Adicione uma nova tarefa">
+      <input name="add-task" id="add-task" type="text" placeholder="Adicione uma nova tarefa" required>
       <button> <span class="hidden">Criar</span> <img src="assets/img/button.svg" alt="button"></button>
     </form>
     
@@ -27,17 +27,17 @@
     <div class="info">
       <div class="created-tasks">
         <h2>Tarefas criadas</h2>
-        <p>16</p>
+        <p>0</p>
       </div>
       <div class="completed-tasks">
         <h2>Concluídas</h2>
-        <p>8</p>
+        <p>0</p>
       </div>
     </div>
 
     <div class="separator"></div>
 
-    <div class="box-lists hidden">
+    <div id="box-lists" class="box-lists">
       
       <div class="list">
         <img src="assets/img/Clipboard.svg" alt="icon of a clipboard">
@@ -49,17 +49,25 @@
       
     </div>
 
-    <div class="task-content">
-      <div class="flex">
-        <div class="checkbox-image">
-          <input type="checkbox" name="checkbox" id="checkbox">
-        </div>
-        <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi blanditiis obcaecati odit praesentium, exercitationem laborum c.</label>
-          <img src="assets/img/trashRegular.svg" alt="trash icon">
-      </div>
-    </div>
+    <ul class="task-content">
+      <!-- Exemplo de uma estrutura HTML de lista
+      <div class="content flex">
 
+        <div class="checkbox-image">
+
+          <input type="checkbox" name="checkbox" id="checkbox">
+
+        </div>
+
+        <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi blanditiis obcaecati odit praesentium, exercitationem laborum c.</label>
+
+        <section class="trash-icon"></section>
+
+      </div>  -->
+    </ul>
   </section>
+
+<script src="scripts.js"></script>
 
 </body>
 </html>

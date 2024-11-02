@@ -1,6 +1,5 @@
 #tasks{
   margin-top: 3rem;
-  
 
   /* Tarefas criadas e concluídas */
 
@@ -8,6 +7,7 @@
     display: flex;
     justify-content: center;
     gap: 4.8rem;
+    margin-bottom: 1.5rem;
 
     & h2{
       margin-top: 0.2rem;
@@ -63,19 +63,18 @@
 }
 
 .task-content{
-  display: flex;
+  display: grid;
   justify-content: center;
-  
+  gap: 0.75rem;
 
   & div{
-    /* display: flex; */
-    align-items: flex-start;
     gap: 0.5rem;
     width: 22.3rem;
     background-color: var(--base-gray);
     border: 1px solid #D1CBD7;
     border-radius: 0.5rem;
     padding: 0.75rem;
+    
     
     position: relative;
     
@@ -99,31 +98,69 @@
     }
 
     &:has(:checked) .checkbox-image{
-      background-image: url(../assets/img/checked.svg);
+      background: url(../assets/img/checked.svg);
     }
 
-    & img{
-      width: 1.5rem;
+    &:has(:checked):hover .checkbox-image{
+      background: url(../assets/img/checked-hover.svg) no-repeat;
     }
 
-    & img:hover{
-      
+    & label {
+      width: 17.99rem;
+    }
+
+    &:has(:checked) label{
+      text-decoration: line-through;
+    }
+
+
+    & .trash-icon{
+      width: 1.2rem;
+      height: 1.2rem;
+      background: url(../assets/img/TrashRegular.svg);
+    }
+
+    & .trash-icon:hover{
+      background-image: url(../assets/img/TrashFill.svg);
     }
   }
+  
+  & div:hover{
+    background-color: #E5E2E9;
+  }
+
+  & div:has(:checked){
+    background-color: #F0EDF2;
+  }
+  
+  & div:has(:checked):hover{
+    background-color: #E5E2E9;
+  }
+  
+
 }
 
 @media (width >= 60em){
+
+  .container{
+    margin-inline: 19rem;
+  }
 
   #tasks{
     margin-top: 5rem;
 
     & .info{
-      gap: 35.5rem;
+      gap: 37rem;
 
     }
 
     & .task-content div{
       width: 46rem;
+
+    }
+
+    .task-content div label{
+      width: 42rem;
     }
   }
 }
