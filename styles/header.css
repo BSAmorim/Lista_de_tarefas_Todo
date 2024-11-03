@@ -54,7 +54,7 @@ header{
   }
 }
 
-@media (width >= 60em){
+@media (width >= 80em){
   header{
     height: 12.5rem;
 
@@ -66,13 +66,13 @@ header{
     & form{
       & input{
         width: 46rem;
-        margin-top: 3.3125rem;
+        margin-top: 3.1rem;
       }
 
       & button{
         display: flex;
         width: 6.875rem;
-        margin-top: 3.4rem;
+        margin-top: 3.1rem;
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
