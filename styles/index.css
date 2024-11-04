@@ -1,3 +1,4 @@
+/* Chama os arquivos CSS e importa no HTML */
 @import url(global.css);
 @import url(header.css);
 @import url(tasks.css);

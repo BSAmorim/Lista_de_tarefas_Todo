@@ -1,4 +1,4 @@
-//Select form's elements
+//Seleciona elementos do HTML
 const task = document.getElementById("add-task")
 const form = document.querySelector("form")
 const taskContent = document.querySelector("ul")
@@ -82,6 +82,7 @@ function updateCreatedTasks(){
     
     total += Number(createdTasks)
 
+    //Verifica se a projeto tem lista, para add o container de tarefas nao criadas
     if(items.length === 0){
       boxList.classList.remove("hidden")
       document.querySelector(".separator").classList.remove("hidden")
@@ -96,6 +97,7 @@ function updateCreatedTasks(){
   }
 }
 
+//Variável de tarefas concluídas
 let value = 0
 
 //Att Completed Tasks
@@ -109,7 +111,7 @@ function updateCompletedTasks(){
         completedTasks.textContent = value
 
       } else {
-
+        //Reduz o valor
         value--
         completedTasks.textContent = value
         
@@ -139,6 +141,7 @@ taskContent.addEventListener("click", function(e){
   
 })
 
+//Limpa o formulário
 function formClear(){
   task.value = ""
 

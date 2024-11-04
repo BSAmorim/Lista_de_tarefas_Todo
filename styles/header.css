@@ -54,6 +54,8 @@ header{
   }
 }
 
+/* Responsividade */
+
 @media (width >= 80em){
   header{
     height: 12.5rem;

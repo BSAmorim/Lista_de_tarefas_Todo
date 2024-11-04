@@ -14,15 +14,18 @@
 
 </head>
 <body>
+  <!-- Header -->
   <header>
     <img src="assets/Logo.svg" alt="logo">
 
+    <!-- Cria o input do tipo texto e botão para fazer o submit da lista  -->
     <form class="container">
       <input name="add-task" id="add-task" type="text" placeholder="Adicione uma nova tarefa" required>
       <button> <span class="hidden">Criar</span> <img src="assets/img/button.svg" alt="button"></button>
     </form>
     
   </header>
+  <!-- Cria o contador de tarefas criadas e concluídas -->
   <section class="container" id="tasks">
     <div class="info">
       <div class="created-tasks">
@@ -34,9 +37,10 @@
         <p>0</p>
       </div>
     </div>
-
+    <!-- Linha de separação -->
     <div class="separator"></div>
 
+    <!-- Bloco de tarefas não cadastradas -->
     <div id="box-lists" class="box-lists">
       
       <div class="list">
@@ -49,6 +53,7 @@
       
     </div>
 
+    <!-- Estrutura da lista -->
     <ul class="task-content">
       <!-- Exemplo de uma estrutura HTML de lista
       <div class="content flex">
